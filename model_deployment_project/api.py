@@ -76,7 +76,7 @@ parser.add_argument(
     help='Mileage of the car', 
     location='args')
 
-state_choices = State['State_y'].tolist()
+state_choices = ['FL', 'OH', 'TX', 'CO', 'ME', 'WA', 'CT', 'CA', 'LA', 'NY', 'PA', 'SC', 'ND', 'NC', 'GA', 'AZ', 'TN', 'KY', 'NJ', 'UT', 'IA', 'AL', 'NE', 'IL', 'OK', 'MD', 'NV', 'WV', 'MI', 'VA', 'WI', 'MA', 'OR', 'IN', 'NM', 'MO', 'HI', 'KS', 'AR', 'MN', 'MS', 'MT', 'AK', 'VT', 'SD', 'NH', 'DE', 'ID', 'RI', 'WY', 'DC']
 state_field = fields.String(
     required=True, 
     description='State of the car',
