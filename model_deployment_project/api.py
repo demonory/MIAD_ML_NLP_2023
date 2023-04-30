@@ -76,9 +76,16 @@ parser.add_argument(
     help='Mileage of the car', 
     location='args')
 
+state_choices = State['State_y'].tolist()
+state_field = fields.String(
+    required=True, 
+    description='State of the car',
+    enum=state_choices
+    )
+
 parser.add_argument(
     'State', 
-    type=str, 
+    type=state_field, 
     required=True, 
     help='State of the car', 
     location='args')
