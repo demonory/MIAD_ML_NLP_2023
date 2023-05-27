@@ -72,7 +72,7 @@ def predict_gender(Year,Title,Plot):
     df_ = pd.DataFrame(data)
  
     # Create features
-    df_['clean_plot'] = df_['plot'].apply(lambda x: clean_text(x))
+    df_['clean_plot'] = df_['Plot'].apply(lambda x: clean_text(x))
     vect2 = TfidfVectorizer(lowercase=False)
     X_dtm2 = vect2.fit_transform(df_['clean_plot'])
   
