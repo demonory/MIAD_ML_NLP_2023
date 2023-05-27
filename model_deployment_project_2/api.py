@@ -32,6 +32,9 @@ from sklearn.metrics import r2_score, roc_auc_score
 from sklearn.model_selection import train_test_split, RandomizedSearchCV
 import matplotlib.pyplot as plt
 import nltk
+nltk.download('omw-1.4')
+nltk.download('stopwords')
+nltk.download('wordnet')
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
