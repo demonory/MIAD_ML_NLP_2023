@@ -85,7 +85,7 @@ def predict_gender(Year,Title,Plot):
  
     # Create features
     
-    vect2 = TfidfVectorizer(lowercase=False)
+    vect2 = TfidfVectorizer(lowercase=False,max_features=34409)
     X_dtm2 = vect2.fit_transform(df_4['clean_plot'])
   
     p1 = grid_search.predict_proba(X_dtm2)
