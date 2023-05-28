@@ -80,7 +80,7 @@ def predict_gender(Year,Title,Plot):
     df_ = pd.DataFrame(data)
     df_['clean_plot'] = df_['Plot'].apply(lambda x: clean_text(x))
     df_clean = df_['clean_plot']
-    df_3 = df_clean.append(df_2)
+    df_3 = df_clean._append(df_2)
     df_4 = pd.DataFrame(df_3,columns=['clean_plot'])
  
     # Create features
